@@ -168,6 +168,21 @@ describe('CloudfrontUtil', function() {
       done();
     });
 
+    it('should include original query params (urlencoded)', function(done) {
+      var params = _.extend({}, defaultParams);
+      var result = CloudfrontUtil.getSignedUrl(
+        'http://foo.com?test=attachment%3Bfilename%3D%221%281%29.jpg%22', params);
+      var parsedResult = url.parse(result, true);
+
+      expect(parsedResult.search).to.have.string('test=attachment%3Bfilename%3D%221%281%29.jpg%22');
+      expect(parsedResult.query).to.have.property('Expires');
+      expect(parsedResult.query).to.have.property('Signature');
+      expect(parsedResult.query).to.have.property('Key-Pair-Id');
+      expect(parsedResult.query).to.have.property('Policy');
+
+      done();
+    });
+
     it('should return a signed URL', function(done) {
       var params = _.extend({}, defaultParams);
       var result = CloudfrontUtil.getSignedUrl('http://foo.com', params);
