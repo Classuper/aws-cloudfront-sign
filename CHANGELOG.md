@@ -1,4 +1,5 @@
 [jasonsims]: https://github.com/jasonsims
+[killmenot]: https://github.com/killmenot
 [mpalmerlee]: https://github.com/mpalmerlee
 [gregt590]: https://github.com/gregt590
 [tbuchok]: https://github.com/tbuchok
@@ -10,6 +11,9 @@
 [clarkie]: https://github.com/clarkie
 [caub]: https://github.com/caub
 [joelwass]: https://github.com/joelwass
+
+## 2.2.1 (2020-05-07)
+* bugfix: [@killmenot][killmenot]: Prevent modifying original URL 
 
 ## 2.2.0 (2016-11-09)
 * development: [@caub][caub]: Simplified expiry and normalization logic
