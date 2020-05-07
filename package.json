@@ -25,14 +25,12 @@
   "bugs": {
     "url": "https://github.com/jasonsims/aws-cloudfront-sign/issues"
   },
-  "dependencies": {
-    "lodash": "^3.6.0"
-  },
   "tonicExampleFilename": "./examples/signedURL.js",
   "devDependencies": {
-    "chai": "^2.2.0",
-    "mocha": "^2.2.1",
-    "moment": "^2.9.0",
-    "sinon": "^1.14.1"
+    "chai": "^4.2.0",
+    "lodash": "^4.17.15",
+    "mocha": "^7.1.2",
+    "moment": "^2.25.3",
+    "sinon": "^9.0.2"
   }
 }

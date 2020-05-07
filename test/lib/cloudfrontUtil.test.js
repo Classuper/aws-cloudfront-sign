@@ -201,7 +201,7 @@ describe('CloudfrontUtil', function() {
     var signedUrlStub;
 
     beforeEach(function(done) {
-      signedUrlStub = sinon.stub(CloudfrontUtil, 'getSignedUrl', _.noop);
+      signedUrlStub = sinon.stub(CloudfrontUtil, 'getSignedUrl').callsFake(_.noop);
       done();
     });
 
