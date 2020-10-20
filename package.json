@@ -1,6 +1,6 @@
 {
   "name": "@classuper/aws-cloudfront-sign",
-  "version": "2.2.1",
+  "version": "2.2.2",
   "description": "Utility module for signing AWS CloudFront URLs",
   "author": "Alexey Kucherenko <alexei.kucherenko@gmail.com>",
   "contributors": [

@@ -12,6 +12,9 @@
 [caub]: https://github.com/caub
 [joelwass]: https://github.com/joelwass
 
+## 2.2.2 (2020-10-20)
+* chore: [@killmenot][killmenot]: Bump deps
+
 ## 2.2.1 (2020-05-07)
 * bugfix: [@killmenot][killmenot]: Prevent modifying original URL 
 
